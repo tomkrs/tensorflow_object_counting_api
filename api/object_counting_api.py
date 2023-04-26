@@ -112,8 +112,11 @@ def cumulative_object_counting_x_axis(input_video, detection_graph, category_ind
                 print ("writing frame")
                 cv2.imshow('object counting',input_frame)
 
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                        break
+                #if cv2.waitKey(1) & 0xFF == ord('q'):
+                #        break
+                ch = 0xFF & cv2.waitKey(1)
+                if ch == 27:
+                    break
 
             cap.release()
             cv2.destroyAllWindows()

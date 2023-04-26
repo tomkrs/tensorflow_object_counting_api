@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Detected Objects
+detected_objects/object*
+the_output.avi
+
 # Distribution / packaging
 .Python
 build/
