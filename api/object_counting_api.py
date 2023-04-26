@@ -110,7 +110,7 @@ def cumulative_object_counting_x_axis(input_video, detection_graph, category_ind
 
                 output_movie.write(input_frame)
                 print ("writing frame")
-                #cv2.imshow('object counting',input_frame)
+                cv2.imshow('object counting',input_frame)
 
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
